@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5d6bdd41be.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    
+    <main class="container mx-auto">
+    <h1 class="text-4xl text-center mt-5">Welcome Bangladesh <span class="font-bold text-pink-600">Switch Bank </span> Interface</h1>
+
+<div class="flex justify-around">
+
+    <div class="card bg-green-600 w-96 bg-primary text-primary-content mt-5">
+        <div class="card-body">
+            <p class="font-bold text-2xl">Deposit</p>
+            <h2 class=" text-4xl">$<span id="deposit">00</span></h2>
+         
+        </div>
+      </div>
+
+    <div class="card bg-rose-600  w-96 bg-primary text-primary-content mt-5">
+        <div class="card-body">
+            <p class="font-bold text-2xl">Withdraw</p>
+            <h2 class=" text-4xl">$<span id="withdrow">00</span></h2>
+         
+        </div>
+      </div>
+    <div class="card bg-cyan-500 w-96 bg-primary text-primary-content mt-5">
+        <div class="card-body">
+            <p class="font-bold text-2xl">Balance</p>
+            <h2 class=" text-4xl">$<span id="balance">100</span></h2>
+         
+        </div>
+      </div>
+</div>
+      
+
+<div class="flex justify-around mt-32">
+
+    <div class="bg-green-500 w-96 p-8">
+        <div>
+            <label for="error" class="block mb-2 text-3xl text-white">Please Deposit</label>
+            <input id="DepositField" type="email" id="error" class="border border-green w-full p-2.5 rounded-2xl " placeholder="Enter Your Email">
+        
+          </div>
+      
+          <button id="depositBtn" class="btn bg-cyan-800 text-white mt-8">Deposit</button>
+    </div>
+    <div class="bg-red-400 w-96 p-8">
+        <div>
+            <label for="error" class="block mb-2 text-3xl text-white">Please withdraw</label>
+            <input id="withdrawField" type="number" id="error" class="border border-green w-full p-2.5 rounded-2xl " placeholder="Enter Your Email">
+        
+          </div>
+      
+          <button id="withdrawBtn" class="btn bg-cyan-800 text-white mt-8">Withdraw</button>
+    </div>
+</div>
+</main>
+
+
+
+    <script src="./js/home.js"></script>
+</body>
+</html>
